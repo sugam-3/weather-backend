@@ -29,7 +29,7 @@ import axios from 'axios';
 // Update this to your backend URL
 // For local testing: http://192.168.x.x:8000 (use your computer's IP)
 // For production: your deployed Django URL
-const BACKEND_URL = 'http://192.168.1.69:8000'; // Change this to your PC's IP
+const BACKEND_URL = 'https://weather-backend-tc65.onrender.com'; // Change this to your PC's IP
 
 const API = axios.create({
   baseURL: BACKEND_URL,
