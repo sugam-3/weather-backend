@@ -22,8 +22,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -77,15 +77,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS - Allow React Native to call this API
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://localhost:19000',
-    'http://localhost:19001',
-    'http://127.0.0.1:19000',
-    'http://127.0.0.1:19001',
-    'http://192.168.1.69:8000',
-    'http://192.168.1.100:8000',]
-
 CORS_ALLOW_CREDENTIALS = True
 
 REST_FRAMEWORK = {
